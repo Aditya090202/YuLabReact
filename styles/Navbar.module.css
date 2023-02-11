@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.Navbar {
+    /* This is the entire navbar if you change the color here it will make it diff */
+    display: flex;
+    justify-content: space-between;
+    background-color: #045CBC;
+    height: 100px;
+    font-family:Rubik;
+}
+
+.Navbar ul {
+    list-style: none;
+    margin: 15px;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+
+}
+
+.Navbar li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.LinkItem {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.LinkItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.LinkItem:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.LinkItem:visited {
+    text-decoration: underline #da3c28;
+}
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    margin-left:150px;
+    /* cursor: pointer; */
+}
+
+.logoText {
+    width: 900px;
+    color: white;
+    margin-left:5px;
+}
+
+.logoA {
+    width: 450px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+}

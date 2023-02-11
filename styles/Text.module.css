@@ -1,0 +1,22 @@
+.mainDiv {
+    height: 250px;
+    width: 200px;
+}
+
+.mainImage {
+    background-color: #D9D9D9;
+    height: 550px;
+    width: 950px;
+    margin-right: 120px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlayDiv {
+    height: 420px;
+    width: 500px;
+    background-color: lightblue;
+}
